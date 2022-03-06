@@ -18,7 +18,7 @@ const showArtist = ({ artists }) => {
   artistsContainer.textContent = "";
   const albumContainer = elementById("albums");
 
-  artists.forEach((artist) => {
+  artists?.forEach((artist) => {
     const div = document.createElement("div");
     div.classList.add("artist-card");
     div.innerHTML = `<div class="image-container">
